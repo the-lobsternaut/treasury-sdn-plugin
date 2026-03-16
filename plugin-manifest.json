@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "name": "treasury",
+  "version": "0.1.0",
+  "description": "US Treasury fiscal data (debt, yields). Parses treasury yields, national debt, fiscal data",
+  "author": "DigitalArsenal",
+  "license": "Apache-2.0",
+  "inputFormats": ["application/json"],
+  "outputFormats": ["$TRY"],
+  "dataSources": [
+    {
+      "name": "treasury",
+      "url": "https://api.fiscaldata.treasury.gov/",
+      "type": "REST",
+      "auth": "api_key (optional)"
+    }
+  ]
+}
